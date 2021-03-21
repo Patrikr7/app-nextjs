@@ -36,7 +36,7 @@ export default function Header({title}) {
 								<a className="nav-link" href="/dia">Destaque do Dia</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#">Sobre Mim</a>
+								<a className="nav-link" href="/sobre">Sobre Mim</a>
 							</li>
 						</ul>
 						<div className="form-inline my-2 my-lg-0">
