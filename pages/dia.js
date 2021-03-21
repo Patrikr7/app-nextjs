@@ -31,7 +31,7 @@ export default function Day({list}) {
 }
 
 export async function getServerSideProps() {
-	const result = await fetch('http://localhost:3000/api/day');
+	const result = await fetch('https://app-themovie-nextjs.vercel.app/api/day');
 	const json = await result.json();
 
 	return {

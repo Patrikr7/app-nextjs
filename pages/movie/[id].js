@@ -33,7 +33,7 @@ export default function MovieItem({info}) {
 }
 
 export async function getServerSideProps(context) {
-	const result = await fetch(`http://localhost:3000/api/movie/${context.params.id}`);
+	const result = await fetch(`https://app-themovie-nextjs.vercel.app/movie/${context.params.id}`);
 	const json = await result.json();
 
 	return {
