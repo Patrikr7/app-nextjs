@@ -5,6 +5,6 @@ export default async (req, res) => {
 	const json = await result.json();
 
 	res.status(200).json({
-		list: json.results,
+		list: json.results
 	})
 }
