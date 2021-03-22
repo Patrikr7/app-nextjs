@@ -14,7 +14,7 @@ export default function MovieItem({info}) {
 					</header>
 					<div className="row">
 						<figure className="col-md-4 offset-md-4">
-							<img className="img-fluid" src={info.backdrop_path ? `https://image.tmdb.org/t/p/original${info.backdrop_path}` : `http://localhost:3000/assets/img/tmdb.jpg`} alt={info.title}/>
+							<img className="img-fluid" src={info.backdrop_path ? `https://image.tmdb.org/t/p/original${info.backdrop_path}` : `https://app-themovie-nextjs.vercel.app/assets/img/tmdb.jpg`} alt={info.title}/>
 						</figure>
 
 						<div className="col-md-6 offset-md-3">

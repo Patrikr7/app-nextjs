@@ -18,7 +18,7 @@ export default function Search({list}) {
 						{list.map(item => (
 							<article className="col-md-2">
 								<a href={`/movie/${item.id}`}>
-									<img className="img-fluid mb-4 rounded" src={item.poster_path ? `https://image.tmdb.org/t/p/original${item.poster_path}` : `http://localhost:3000/assets/img/tmdb.jpg`} alt={item.title} title={item.title}/>
+									<img className="img-fluid mb-4 rounded" src={item.poster_path ? `https://image.tmdb.org/t/p/original${item.poster_path}` : `https://app-themovie-nextjs.vercel.app/assets/img/tmdb.jpg`} alt={item.title} title={item.title}/>
 								</a>
 							</article>
 						))}
