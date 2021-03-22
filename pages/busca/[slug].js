@@ -33,7 +33,7 @@ export default function Search({list}) {
 }
 
 export async function getServerSideProps(context) {
-	const result = await fetch(`https://app-themovie-nextjs.vercel.app/search/${context.params.slug}`);
+	const result = await fetch(`https://app-themovie-nextjs.vercel.app/api/search/${context.params.slug}`);
 	const json = await result.json();
 
 	return {
