@@ -7,8 +7,8 @@ export default function Header({title}) {
 
 	const handleSearch = async () => {
 		if(searchText !== ''){
-			const searchReplace = searchText.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/,?\s+/g, "-");
-			window.location.href = `https://app-themovie-nextjs.vercel.app/busca/${searchReplace}`;
+			//const searchReplace = searchText.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/,?\s+/g, "-");
+			window.location.href = `https://app-themovie-nextjs.vercel.app/busca/${searchText}`;
 		}
 	};
 
